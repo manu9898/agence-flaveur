@@ -3,7 +3,205 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<div class="container">
-    <button type="button" class="btn btn-primary">Primary</button>
-</div>
+<section>
+    <main>
+        <section>
+            <div class="image-wrapper animate__animated animate__fadeIn animate__delay-1s">
+                <div class="overlay-top"></div>
+                <div class="bottom-divider"></div>
+                <div id="textCarousel" class="carousel carousel-fade image-text animate__animated animate__fadeInUp animate__delay-2s" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-inner text-center container">
+                        <div class="carousel-item active ">
+                            <h2>Flaveur est un cabinet de conseils et de services </h2>
+                            <p>qui offre aux filières de production  et aux territoires une gamme de prestations stratégiques et opérationnelles.
+                                Flaveur porte et défend les valeurs durables et responsables des entreprises,<br>
+                                des collectifs ou des collectivités qu’elle accompagne.</p>
+                        </div>
+                        <div class="carousel-item ">
+                            <h2>Son crédo : </h2>
+                            <p>se mettre à l'écoute du terrain, <br>
+                            valoriser la différence et développer des projets audacieux !
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Bullets -->
+                <div class="carousel-indicators animate__animated animate__fadeInUp animate__delay-3s">
+                    <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#textCarousel" data-bs-slide-to="1"></button>
+                </div>
+            </div>
+        </section>
+        <section id="added-value" class="text-center">
+            <div class="div-added-value">
+                <div class="d-flex justify-content-center position-relative">
+                    <span class="spanTopBottom"></span>
+                    <svg class="svgHomePage" width="26" height="26" viewBox="0 0 24 24">
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="8"
+                            fill="none"
+                            stroke="#007fe0"
+                            stroke-width="1.5"
+                        />
+
+                        <text
+                            x="12"
+                            y="15"
+                            text-anchor="middle"
+                            dominant-baseline="middle"
+                            font-size="20"
+                            fill="#007fe0"
+                            transform="translate(0,3)"
+                        >
+                            ❞
+                        </text>
+
+                    </svg>
+                </div>
+                <div class="row justify-content-center" style="color:#333">
+                    <div class="md:mx-0 mx-20 col-6 text-center">
+
+                        <p class="fs-5">
+                            Flaveur, La valeur ajoutée …
+                        </p>
+
+                        <p class="fs-5">
+                            Riche de compétences dans les domaines du tourisme, du développement durable, des filières de production
+                            et dans la gestion de projet, Flaveur vous accompagne dans vos projets de développement.
+                        </p>
+
+                        <h2 class="fs-5 fw-bold">
+                            Flaveur c’est avant tout :
+                        </h2>
+
+                    </div>
+                </div>
+
+                <div class="container mt-20 sectionIconAddedValue">
+                    <div class="row g-4 justify-content-center text-center fs-4">
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center text-center gap-2">
+                            {{ component('CheckCircle') }}
+                            <p>Des réalisations <br> minutieuses</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center text-center gap-2">
+                            {{ component('CheckCircle') }}
+                            <p>De l'engagement</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center text-center gap-2">
+                            {{ component('CheckCircle') }}
+                            <p>De l'adaptation</p>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center text-center gap-2">
+                            {{ component('CheckCircle') }}
+                            <p>De l'écoute</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="d-flex justify-content-center position-relative">
+                    <span class="spanTopBottom "></span>
+                    <svg class="svgHomePage" width="26" height="26" viewBox="0 0 24 24">
+
+                        <circle
+                            cx="12"
+                            cy="12"
+                            r="8"
+                            fill="none"
+                            stroke="#007fe0"
+                            stroke-width="1.5"
+                        />
+
+                        <text
+                            x="12"
+                            y="15"
+                            text-anchor="middle"
+                            dominant-baseline="middle"
+                            font-size="20"
+                            fill="#007fe0"
+                            transform="translate(0,3)"
+                        >
+                            ❞
+                        </text>
+
+                    </svg>
+                </div>
+
+                <div class="container">
+                    <h2 class="fs-5 mb-5">Flaveur, pour voir plus loin …</h2>
+                    <div class="d-flex row justify-content-center">
+                        <div class="col-12 col-md-6">
+                            Les enjeux des professionnels du monde agricole et viticole, ainsi que des territoires s’intensifient.
+                            Les métiers évoluent, les besoins en compétences augmentent alors que le temps et les ressources internes s’amoindrissent.
+                        </div>
+                        <div class="col-12 col-md-6">
+                            S’adapter aux attentes des clientèles, aux tendances sociétales, aux technologies ;
+                            rentabiliser son activité tout en concourant au maintien et à la valorisation du capital humain et environnemental ;
+                            composer avec la diversité des acteurs, …sont autant de défis à relever..
+                        </div>
+                        <div class="col-12 col-md-8 mt-4">
+                            Et si l’avenir appartenait aux entreprises offrant des pratiques nouvelles, imaginatives et durables ?
+                        </div>
+                        <div class="col-12 col-md-8 my-5 fw-bold" style="color: #008bac;">
+                            Flaveur fait de l’accompagnement son cœur de métier
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="logoSectionHomePage">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ asset('build/images/flaveur-sphere-2-1.png') }}" class="logo">
+                            <p class="animate__animated animate__fadeIn animate__delay-1s">
+                                Création de<br> valeur ajoutée
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ asset('build/images/flaveur-sphere-5-1.png') }}" class="logo">
+                            <p class="animate__animated animate__fadeIn animate__delay-1s">
+                                Orientations<br> stratégiques<br> abouties
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ asset('build/images/flaveur-sphere-4-1.png') }}" class="logo">
+                            <p class="animate__animated animate__fadeIn animate__delay-1s">
+                                Performance et<br> visibilité
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ asset('build/images/flaveur-sphere-2-1.png') }}" class="logo">
+                            <p class="animate__animated animate__fadeIn animate__delay-1s">
+                                Gain<br>
+                                de temps
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{ asset('build/images/flaveur-sphere-1-1.png') }}" class="logo">
+                            <p class="animate__animated animate__fadeIn animate__delay-1s">Vision<br>
+                                extérieure</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</section>
 {% endblock %}
