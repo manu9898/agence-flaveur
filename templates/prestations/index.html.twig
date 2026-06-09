@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    {{ component('HeroSection', {
+        title: 'Conseil stratégique <br> en œnotourisme et agritourisme',
+        backgroundClass: 'hero-bg-1',
+        topDividerClass: 'hero-divider-top-1',
+        bottomDividerClass: 'hero-divider-bottom-1'
+    }) }}
+
+
+    {{ component('HeroSection', {
+        title: 'Co-construction <br> de projets',
+        backgroundClass: 'hero-bg-2',
+        topDividerClass: 'hero-divider-top-2',
+
+    }) }}
+
+    {{ component('HeroSection', {
+        title: 'Conseil en<br> développement durable et RSE',
+        backgroundClass: 'hero-bg-3',
+        topDividerClass: 'hero-divider-top-3',
+        bottomDividerClass: 'hero-divider-bottom-3'
+
+    }) }}
+
+
+
+    {{ component('HeroSection', {
+        title: 'Conseil en<br> développement durable et RSE',
+        backgroundClass: 'hero-bg-4',
+        topDividerClass: 'hero-divider-top-4',
+
+    }) }}
+
+    {{ component('HeroSection', {
+        title: 'Conseil en<br> développement durable et RSE',
+        backgroundClass: 'hero-bg-5',
+        topDividerClass: 'hero-divider-top-5',
+        bottomDividerClass: 'hero-divider-bottom-5'
+
+    }) }}
+
+
+{% endblock %}

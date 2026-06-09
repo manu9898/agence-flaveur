@@ -1,0 +1,31 @@
+<div{{ attributes }}>
+    <section class="hero-section {{ backgroundClass }} position-relative">
+
+        <div class="hero-overlay"></div>
+
+        {# TOP toujours présent #}
+        {% if topDividerClass is not empty %}
+            <div class="hero-divider hero-divider-top {{ topDividerClass }}"></div>
+        {% endif %}
+
+        <div class="container text-center text-white py-5">
+
+            <div class="hero-card d-flex flex-column align-items-center text-center text-white">
+
+                <h2>{{ title|raw }}</h2>
+
+                <a href="#" class="btn btn-hero mt-3">
+                    En savoir plus
+                </a>
+
+            </div>
+
+        </div>
+
+
+        {% if bottomDividerClass is not empty %}
+            <div class="hero-divider hero-divider-bottom {{ bottomDividerClass }}"></div>
+        {% endif %}
+
+    </section>
+</div>

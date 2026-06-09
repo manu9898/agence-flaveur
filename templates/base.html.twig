@@ -24,9 +24,16 @@
         <script src="https://cdn.jsdelivr.net/npm/frankenphp-hot-reload/+esm" type="module"></script>
         {% endif %}
     </head>
-    <body>
+    <body class="d-flex flex-column min-vh-100">
+
     {{ component('Navbar') }}
+
+    {# 🔥 pousse le footer en bas #}
+    <main class="flex-grow-1">
         {% block body %}{% endblock %}
+    </main>
+
     {{ component('Footer') }}
+
     </body>
 </html>
