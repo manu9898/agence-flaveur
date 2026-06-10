@@ -1,0 +1,23 @@
+<div{{ attributes }}>
+    <div{{ attributes }} class="objective-card">
+
+        <div class="objective-card__top">
+            <img
+                src="{{ asset(topImage) }}"
+                alt="{{ title }}"
+            >
+        </div>
+
+        <h4 class="objective-card__title">
+            {{ title|raw }}
+        </h4>
+
+        <div class="objective-card__bottom">
+            <img
+                src="{{ asset(bottomImage) }}"
+                alt=""
+            >
+        </div>
+
+    </div>
+</div>

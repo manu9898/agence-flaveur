@@ -1,0 +1,13 @@
+<section{{ attributes }}>
+    <div class="approach-header text-center py-5 {{ backgroundClass }}">
+        <div class="section-top-divider"></div>
+        <div class="container">
+            <h1 class="text-white fw-bold">{{ title|raw }}</h1>
+        </div>
+
+        {# Affiche le texte seulement s'il existe #}
+        {% if text %}
+            <p class="approach-header-text-development text-white text-center container">{{ text|raw }}</p>
+        {% endif %}
+    </div>
+</section>

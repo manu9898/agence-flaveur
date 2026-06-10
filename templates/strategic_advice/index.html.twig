@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello StrategicAdviceController!{% endblock %}
+
+{% block body %}
+<section style="margin-bottom: 100px">
+    {{ component('ServiceHeader', {
+        backgroundClass: 'service-header-oenotourisme',
+        title: 'Conseil stratégique en œnotourisme et agritourisme',
+        subtitle: 'Le tourisme, une autre manière de gagner en attractivité !<br>Démarquez-vous et créez des projets qui vous ressemblent !',
+        objectives: '<p><span style="font-size:x-large;color:#ffffff;">Objectifs :</span></p>'
+    }) }}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
+                    bottomImage: 'etiquette-5-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
+                    bottomImage: 'etiquette-2-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-3-rose-haut.jpg',
+                    bottomImage: 'etiquette-3-rose-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
+                    bottomImage: 'etiquette-5-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center g-3">
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-3-rose-haut.jpg',
+                    bottomImage: 'etiquette-3-rose-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
+                    bottomImage: 'etiquette-2-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="supportflaveur text-center container mt-5 mb-5">
+        <p>Flaveur vous accompagne dans la construction ou la redéfinition de votre stratégie d’animation in situ ou bien hors les murs,<br> en tenant compte de l’identité de votre entreprise.</p>
+    </div>
+
+    {{ component('ApproachHeader', {
+        title: "L’approche Flaveur",
+        backgroundClass: "approach-bg-prestas1"
+    }) }}
+
+
+    <div class="container py-3">
+        <div class="step-grid">
+            {{ component('StepCard', { title: "Établir", description: "un état des lieux", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Définir", description: "le contenu de l’offre", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Affilier", description: "à un réseau d’acteurs", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Planifier", description: "le programme d’actions : Préparation, exécution et suivi", class:'step-card-wrapper'}) }}
+        </div>
+    </div>
+
+</section>
+{% endblock %}

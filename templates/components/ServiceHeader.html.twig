@@ -1,0 +1,18 @@
+<section {{ attributes }}>
+    <div class="service-header {{ backgroundClass }}">
+
+        <h2 class="text-center text-white">
+            {{ title }}
+        </h2>
+
+        <h3 class="text-center text-white">
+            {{ subtitle|raw }}
+        </h3>
+
+        {{ component('Testimonial', {
+            text: objectives
+        }) }}
+
+    </div>
+</section>
+

@@ -1,0 +1,9 @@
+<div{{ attributes }}>
+    <div class="step-card {{ cornerClass|default('rounded-top-left-bottom-right') }}"
+         style="transform: rotate({{ rotation|default(0) }}deg);">
+        <p class="text-center">
+            <span style="color: #008bac;"><strong>{{ title|raw }}</strong></span><br>
+            {{ description|raw }}
+        </p>
+    </div>
+</div>

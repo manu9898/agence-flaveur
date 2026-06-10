@@ -443,3 +443,277 @@ footer {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxN3B4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTAgNDcuNDRMMTcwIDBsNjI2LjQ4IDk0Ljg5TDExMTAgODcuMTFsMTcwLTM5LjY3VjE0MEgwVjQ3LjQ0eiIgZmlsbC1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0wIDkwLjcybDE0MC0yOC4yOCAzMTUuNTIgMjQuMTRMNzk2LjQ4IDY1LjggMTE0MCAxMDQuODlsMTQwLTE0LjE3VjE0MEgwVjkwLjcyeiIvPjwvZz48L3N2Zz4=");
 }
 
+
+
+/* ======================================================
+   Strategic Advice
+====================================================== */
+
+.service-header {
+    padding-top: 100px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-header-oenotourisme {
+    background-image: url('../images/motifs-prestas-oenotourisme.jpg');
+}
+
+.service-header-project-development{
+    background-image: url('../images/motifs-prestas-6.jpg');
+    background-position: left bottom; /* focus sur le coin inférieur gauche */
+    background-size: cover;           /* l’image recouvre tout le conteneur */
+    background-repeat: no-repeat;     /* évite la répétition */
+
+}
+
+.service-header h2{
+    font-size:24px
+}
+
+.service-header h3{
+    font-size:20px
+}
+
+.testimonial {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.testimonial-icon {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f5f5f5; /* cercle blanc */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.testimonial-icon::before {
+    content: "“"; /* guillemet stylisé */
+    font-size: 38px;
+    color: #008bac; /* bleu Divi */
+    line-height: 0;
+    transform: translateY(10px);
+}
+
+.testimonial-content {
+    margin-top: 20px;
+}
+
+.testimonial-text {
+    font-size: x-large;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-size: medium;
+    color: #cccccc;
+}
+
+
+/* ========================
+   Objectif card
+=========================== */
+
+.objective-card {
+    text-align: center;
+}
+
+.objective-card__top img,
+.objective-card__bottom img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.objective-card__title {
+    color: #999;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.supportflaveur p{
+    color: #999999!important;
+    font-size: 17px;
+}
+
+.approach-header {
+    padding-top: 0;
+    margin-bottom: 50px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.approach-bg-prestas1 {
+    background-image: url('../images/motifs-prestas-oenotourisme.jpg');
+}
+
+.approach-bg-prestas6{
+    background-image: url('../images/motifs-prestas-6.jpg');
+}
+
+.approach-header-text-development{
+    max-width: 600px!important;
+    line-height: 1.6em;
+}
+
+.approach-header h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.section-top-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 28px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwcHgiIGhlaWdodD0iMTQwcHgiIHZpZXdCb3g9IjAgMCAxNjAgMTQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik04MCAwTDAgMTQwaDE2MHoiLz48L2c+PC9zdmc+");
+    background-size: cover;
+    background-position-x: center;
+    transform: scale(1, -1);
+    z-index: 1;
+}
+
+.step-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 300px)); /* 2 cartes par ligne */
+    grid-auto-rows: minmax(50px, 1fr)!important;                 /* toutes les lignes prennent la hauteur max */
+    column-gap: 10rem;                     /* espace horizontal entre les cartes */
+    row-gap: 1rem;
+    width: 100%;
+    justify-content: center;
+
+}
+
+/* Wrapper bordure séparée */
+.step-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;                        /* remplit la hauteur de la ligne */
+    justify-content: center;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 139, 172, 0.36);
+    border-radius: 20px 0 20px 0;
+    padding: 10px;                       /* padding interne pour laisser respirer les coins */
+    background-color: transparent;        /* wrapper transparent pour que la carte intérieure ait sa couleur */
+
+    min-width: 200px;   /* largeur minimale */
+    max-width: 300px;   /* largeur maximale */
+    width: 100%;        /* remplit la colonne Grid */
+}
+
+/* Carte réelle */
+.step-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color:#999999!important;
+    background-color: #fff;
+    width: 100%;       /* largeur uniforme, remplit le wrapper */
+    height: 100%;      /* remplit la hauteur du wrapper */
+    box-sizing: border-box;
+    border-radius: inherit; /* hérite des coins arrondis du wrapper */
+}
+
+.step-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 300px)); /* 2 cartes par ligne */
+    grid-auto-rows: 1fr;                                     /* hauteur uniforme par ligne */
+    column-gap: 5rem;                                        /* espace horizontal */
+    row-gap: 1rem;                                           /* espace vertical */
+    justify-content: center;
+    width: 100%;
+}
+
+.step-grid-5 .step-card-wrapper:nth-child(3) {
+    grid-column: 1 / span 2; /* occupe les 2 colonnes */
+    justify-self: center;     /* centre horizontalement */
+}
+
+/* Wrapper avec bordure séparée */
+.step-grid-5 .step-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 139, 172, 0.36);
+    border-radius: 20px 0 20px 0;
+    padding: 10px;
+    background-color: transparent;
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Carte réelle */
+.step-grid-5 .step-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #999999;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: inherit;
+}
+
+@media (max-width: 768px) {
+
+
+    .step-grid-5 {
+        grid-template-columns: 1fr;   /* une seule colonne */
+        grid-auto-rows: auto;         /* hauteur automatique pour chaque carte */
+        column-gap: 0;
+        row-gap: 1rem;
+        justify-items: center;        /* centre horizontalement toutes les cartes */
+    }
+
+    .step-grid-5 .step-card-wrapper {
+        width: 80%;                   /* largeur adaptée sur mobile */
+        max-width: 300px;
+    }
+
+    .step-grid-5 .step-card-wrapper:nth-child(3) {
+        grid-column: 1;               /* carte centrale occupe la seule colonne */
+        justify-self: center;         /* centrage horizontal */
+    }
+
+    .step-grid {
+        grid-template-columns: 1fr;   /* une seule colonne */
+        grid-auto-rows: auto;
+        column-gap: 0;
+        row-gap: 1rem;
+        justify-items: center;        /* centre horizontalement toutes les cartes */
+    }
+
+    .step-grid .step-card-wrapper {
+        width: 80%;                   /* largeur adaptée sur mobile */
+        max-width: 300px;
+    }
+}

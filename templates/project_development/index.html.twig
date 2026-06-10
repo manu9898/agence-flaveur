@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProjectDeveloppementController!{% endblock %}
+
+{% block body %}
+<section style="margin-bottom: 100px">
+    {{ component('ServiceHeader', {
+        backgroundClass: 'service-header-project-development',
+        title: 'Conseil stratégique en œnotourisme et agritourisme',
+        subtitle: 'Le tourisme, une autre manière de gagner en attractivité !<br>Démarquez-vous et créez des projets qui vous ressemblent !',
+        objectives: '<p><span style="font-size:x-large;color:#ffffff;">Objectifs :</span></p>'
+    }) }}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
+                    bottomImage: 'etiquette-5-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
+                    bottomImage: 'etiquette-2-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-3-rose-haut.jpg',
+                    bottomImage: 'etiquette-3-rose-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
+                    bottomImage: 'etiquette-5-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center g-3">
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-3-rose-haut.jpg',
+                    bottomImage: 'etiquette-3-rose-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
+                    bottomImage: 'etiquette-2-bleue-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="supportflaveur text-center container mt-5 mb-5">
+        <p>Flaveur pilote et anime vos projets multipartenaires (collectifs, labels…)<br>
+            afin de rassembler autour d’objectifs communs.</p>
+    </div>
+
+    {{ component('ApproachHeader', {
+        title: "L’approche Flaveur",
+        backgroundClass: "approach-bg-prestas6",
+        text:"En tant qu’animateur de réseau,<br>
+            Flaveur vous accompagne dans votre projet collectif.<br>
+            Loin de vous proposer des réponses toutes faites,<br>
+            Flaveur intervient en tant que facilitateur et agitateur d’idées.<br>
+            C’est à vous que revient le mérite de vos choix et de vos actions !",
+    }) }}
+
+    <div class="container py-3">
+        <div class="step-grid-5">
+            {{ component('StepCard', { title: "Établir", description: "un état des lieux", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Définir", description: "le contenu de l’offre", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Analyse", description: "Carte centrale", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Affilier", description: "à un réseau d’acteurs", class:'step-card-wrapper'}) }}
+            {{ component('StepCard', { title: "Planifier", description: "le programme d’actions : Préparation, exécution et suivi", class:'step-card-wrapper'}) }}
+        </div>
+    </div>
+</section>
+{% endblock %}
