@@ -472,6 +472,14 @@ footer {
 
 }
 
+.service-header-sustainable_development{
+    background-image: url('../images/motifs-prestas-7.jpg');
+    background-position: left bottom; /* focus sur le coin inférieur gauche */
+    background-size: cover;           /* l’image recouvre tout le conteneur */
+    background-repeat: no-repeat;     /* évite la répétition */
+
+}
+
 .service-header h2{
     font-size:24px
 }
@@ -571,6 +579,11 @@ footer {
     background-image: url('../images/motifs-prestas-6.jpg');
 }
 
+.approach-bg-prestas7{
+    background-image: url('../images/motifs-prestas-8.jpg');
+
+}
+
 .approach-header-text-development{
     max-width: 600px!important;
     line-height: 1.6em;
@@ -600,7 +613,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 300px)); /* 2 cartes par ligne */
     grid-auto-rows: minmax(50px, 1fr)!important;                 /* toutes les lignes prennent la hauteur max */
-    column-gap: 10rem;                     /* espace horizontal entre les cartes */
+    column-gap: 10rem;
     row-gap: 1rem;
     width: 100%;
     justify-content: center;
@@ -611,7 +624,8 @@ footer {
 .step-card-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;                        /* remplit la hauteur de la ligne */
+    height: 100%; /* <-- ne plus forcer la hauteur */
+    overflow-wrap: break-word;                      /* remplit la hauteur de la ligne */
     justify-content: center;
     box-sizing: border-box;
     border: 3px solid rgba(0, 139, 172, 0.36);
@@ -715,5 +729,60 @@ footer {
     .step-grid .step-card-wrapper {
         width: 80%;                   /* largeur adaptée sur mobile */
         max-width: 300px;
+    }
+}
+
+/* ======================================================
+   sustainable-development-advice
+====================================================== */
+
+
+.step-grid-6-wrapper {
+    width: 100%;
+    max-width: 1080px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Grille principale */
+.step-grid-6 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 600px)); /* colonnes plus larges que le global */
+    grid-auto-rows: 1fr;       /* hauteur uniforme par ligne */
+    column-gap: 15rem;
+    row-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Cards spécifiques à cette page */
+.step-grid-6 .step-card-wrapper {
+    min-width: 350px !important;
+    max-width: 600px !important;
+    width: 100%;
+    font-size: 14px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .step-grid-6 {
+        grid-template-columns: 1fr;   /* une seule colonne */
+        grid-auto-rows: auto;         /* chaque card prend la hauteur de son contenu */
+        column-gap: 0;
+        row-gap: 1rem;
+        justify-items: center;        /* centre horizontalement les cards */
+    }
+
+    .step-grid-6 .step-card-wrapper {
+        min-width: unset !important;  /* laisse la grille décider */
+        max-width: 400px !important;  /* limite la largeur sur mobile */
+        width: 100%;
+        font-size: 14px!important;
+        padding-left: 10px!important;
+        padding-right: 10px!important;
     }
 }

@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SustainableDeveloppementAdviceController!{% endblock %}
+
+{% block body %}
+<section style="margin-bottom: 100px">
+
+    {{ component('ServiceHeader', {
+        backgroundClass: 'service-header-sustainable_development',
+        title: 'Conseil en développement durable et RSE',
+        subtitle: 'La RSE (Responsabilité Sociétale d’Entreprise) offre un regard nouveau<br>
+                    sur le monde de l’entreprise. Mais de quoi s’agit-il ?<br>
+                    Comment la mettre en œuvre et pourquoi ?  Interrogeons-nous ensemble !<br>',
+        objectives: '<p><span style="font-size:x-large;color:#ffffff;">Objectifs :</span></p>'
+    }) }}
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-6-rouge-haut.jpg',
+                    bottomImage: 'etiquette-6-rouge-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-7-orange-haut.jpg',
+                    bottomImage: 'etiquette-7-orange-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-8-rose-clair-haut.jpg',
+                    bottomImage: 'etiquette-8-rose-clair-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+            <div class="col-12 col-md-3">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-6-rouge-haut.jpg',
+                    bottomImage: 'etiquette-6-rouge-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center g-3">
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-8-rose-clair-haut.jpg',
+                    bottomImage: 'etiquette-8-rose-clair-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+
+            <div class="col-12 col-md-auto">
+                {{ component('ObjectiveCard', {
+                    topImage: 'etiquette-7-orange-haut.jpg',
+                    bottomImage: 'etiquette-7-orange-bas.jpg',
+                    title: 'Gagner en visibilité<br>et en notoriété'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+    <div class="supportflaveur text-center container mt-5 mb-5">
+        <p>Flaveur vous aide à identifier votre rôle et votre impact en tant qu’acteur<br>
+            économique, social, enironnemental, puis à vous inscrire dans une logique de progression.</p>
+    </div>
+
+    {{ component('ApproachHeader', {
+        title: "L’approche Flaveur",
+        backgroundClass: "approach-bg-prestas7"
+    }) }}
+
+    <div class="container py-3">
+        <div class="step-grid-6-wrapper">
+            <div class="step-grid-6">
+                {{ component('StepCard', {
+                    title: "Comprendre",
+                    description: "les mécanismes vertueux de la RSE reposant sur le triptyque la Planète- les Personnes – le Profit",
+                    class:'step-card-wrapper'
+                }) }}
+
+                {{ component('StepCard', {
+                    title: "Définir",
+                    description: "le contenu de l’offre",
+                    class:'step-card-wrapper'
+                }) }}
+
+                {{ component('StepCard', {
+                    title: "Affilier",
+                    description: "à un réseau d’acteurs",
+                    class:'step-card-wrapper'
+                }) }}
+
+                {{ component('StepCard', {
+                    title: "Établir",
+                    description: "un état des lieux",
+                    class:'step-card-wrapper'
+                }) }}
+
+                {{ component('StepCard', {
+                    title: "Définir",
+                    description: "le contenu de l’offre",
+                    class:'step-card-wrapper'
+                }) }}
+
+                {{ component('StepCard', {
+                    title: "Affilier",
+                    description: "à un réseau d’acteurs",
+                    class:'step-card-wrapper'
+                }) }}
+            </div>
+        </div>
+    </div>
+
+
+</section>
+{% endblock %}
