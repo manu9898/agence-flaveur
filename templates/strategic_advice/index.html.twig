@@ -11,58 +11,24 @@
         objectives: '<p><span style="font-size:x-large;color:#ffffff;">Objectifs :</span></p>'
     }) }}
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-3">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
-                    bottomImage: 'etiquette-5-bleue-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
-            <div class="col-12 col-md-3">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
-                    bottomImage: 'etiquette-2-bleue-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
-            <div class="col-12 col-md-3">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-3-rose-haut.jpg',
-                    bottomImage: 'etiquette-3-rose-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
-            <div class="col-12 col-md-3">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-5-bleue-foncee-haut.jpg',
-                    bottomImage: 'etiquette-5-bleue-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
-        </div>
-    </div>
+    {{ component('ObjectiveGrid', {
+        topImage1: 'etiquette-9-rouge-haut.jpg',
+        bottomImage1: 'etiquette-9-rouge-bas.jpg',
+        title1: 'Construire votre réputation et consolider votre identité',
 
-    <div class="container mt-5">
-        <div class="row justify-content-center g-3">
-            <div class="col-12 col-md-auto">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-3-rose-haut.jpg',
-                    bottomImage: 'etiquette-3-rose-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
+        topImage2: 'etiquette-10-jaune-haut.jpg',
+        bottomImage2: 'etiquette-10-jaune-bas.jpg',
+        title2: 'Être vu, devenir reconnu dans votre domaine',
 
-            <div class="col-12 col-md-auto">
-                {{ component('ObjectiveCard', {
-                    topImage: 'etiquette-2-bleue-claire-haut.jpg',
-                    bottomImage: 'etiquette-2-bleue-bas.jpg',
-                    title: 'Gagner en visibilité<br>et en notoriété'
-                }) }}
-            </div>
-        </div>
-    </div>
+        topImage3: 'etiquette-11-violet-haut.jpg',
+        bottomImage3: 'etiquette-11-violet-bas.jpg',
+        title3: 'Encourager le rapport de confiance, créer du lien',
+
+        topImage4: 'etiquette-9-rouge-haut.jpg',
+        bottomImage4: 'etiquette-9-rouge-bas.jpg',
+        title4: 'Générer du traffic, améliorer le référencement de votre site web',
+    }) }}
+
 
     <div class="supportflaveur text-center container mt-5 mb-5">
         <p>Flaveur vous accompagne dans la construction ou la redéfinition de votre stratégie d’animation in situ ou bien hors les murs,<br> en tenant compte de l’identité de votre entreprise.</p>
@@ -74,14 +40,14 @@
     }) }}
 
 
-    <div class="container py-3">
-        <div class="step-grid">
-            {{ component('StepCard', { title: "Établir", description: "un état des lieux", class:'step-card-wrapper'}) }}
-            {{ component('StepCard', { title: "Définir", description: "le contenu de l’offre", class:'step-card-wrapper'}) }}
-            {{ component('StepCard', { title: "Affilier", description: "à un réseau d’acteurs", class:'step-card-wrapper'}) }}
-            {{ component('StepCard', { title: "Planifier", description: "le programme d’actions : Préparation, exécution et suivi", class:'step-card-wrapper'}) }}
-        </div>
-    </div>
+{#    <div class="container py-3">#}
+{#        <div class="step-grid">#}
+{#            {{ component('StepCard', { title: "Établir", description: "un état des lieux", class:'step-card-wrapper'}) }}#}
+{#            {{ component('StepCard', { title: "Définir", description: "le contenu de l’offre", class:'step-card-wrapper'}) }}#}
+{#            {{ component('StepCard', { title: "Affilier", description: "à un réseau d’acteurs", class:'step-card-wrapper'}) }}#}
+{#            {{ component('StepCard', { title: "Planifier", description: "le programme d’actions : Préparation, exécution et suivi", class:'step-card-wrapper'}) }}#}
+{#        </div>#}
+{#    </div>#}
 
 </section>
 {% endblock %}

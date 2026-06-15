@@ -1,0 +1,120 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EditorialController!{% endblock %}
+
+{% block body %}
+
+<section style="margin-bottom: 100px">
+
+    {{ component('ServiceHeader', {
+        backgroundClass: 'service-header-editorial',
+        title: 'Sensibilisation & communication ',
+        subtitle: '<div class="service-header-text">
+        Parce que les transitions durables reposent avant tout sur la compréhension, la connaissance mais aussi l’échange et l’implication des acteurs, Flaveur conçoit et anime des actions de sensibilisation et de communication adaptées aux enjeux des territoires, des filières et des organisations.<br><br>
+        Au travers de supports de communication, de formats de rencontre participatifs, pédagogiques et ancrés dans le terrain, l’objectif est de transmettre des connaissances, encourager le dialogue et faire émerger de nouvelles pratiques plus responsables et plus solidaires.
+    </div>',
+        objectives: '<p class="service-objectives">
+                       <span class="service-objectives-title">Objectifs :</span>
+                       </p>'
+    }) }}
+
+
+    {{ component('ObjectiveGrid', {
+        topImage1: 'etiquette-9-rouge-haut.jpg',
+        bottomImage1: 'etiquette-9-rouge-bas.jpg',
+        title1: 'Valorisation des initiatives locales et des savoir-faire',
+
+        topImage2: 'etiquette-10-jaune-haut.jpg',
+        bottomImage2: 'etiquette-10-jaune-bas.jpg',
+        title2: 'Interventions et ateliers de sensibilisation ',
+
+        topImage3: 'etiquette-11-violet-haut.jpg',
+        bottomImage3: 'etiquette-11-violet-bas.jpg',
+        title3: 'Création de contenus pédagogiques et supports de communication',
+
+        topImage4: 'etiquette-9-rouge-haut.jpg',
+        bottomImage4: 'etiquette-9-rouge-bas.jpg',
+        title4: 'Actions de médiation et d’accessibilité ',
+    }) }}
+
+
+    <div class="supportflaveur text-center container mt-5 mb-5 ">
+        <p class="fs-4">Transmettre, sensibiliser et accompagner l’évolution des pratiques</p>
+    </div>
+
+    {{ component('ApproachHeader', {
+        title: "",
+        backgroundClass: "approach-bg-prestas10",
+        text: "Labels, démarches qualité, mais aussi outils de médiation, ou encore événements de sensibilisation,
+         constituent autant de leviers pour faire évoluer les pratiques, améliorer l’accueil des publics et valoriser les engagements des acteurs.<br /><br />
+    <strong style='font-size:24px'>Pour qui : </strong> Les vignerons engagés, la chambre d’agriculture 84, le Campus Provence Ventoux, la maison des vins et du tourisme de Sablet,…<br>
+    <strong>Mettre en appétit les publics, de la conception à l’animation :</strong> création de supports de communication, animation d’ateliers d’intelligence collective et développement de démarches transversales<br /> favorisant la coopération et l’engagement entre des structures et acteurs aux objectifs variés.
+
+",
+    }) }}
+
+
+    {{ component('ProjectItem', {
+        image: 'build/images/atelier-autour-de-la-micro-aventure-pour-les-vignerons-engagés.jpg',
+        title: 'Atelier micro-aventure',
+        variant: 'communication',
+        content: "
+        <strong>Commanditaire :</strong> Les vignerons engagés<br>
+        <strong>Date :</strong> Avril 2023<br><br>
+
+        Animation d’un atelier autour de la thématique <strong><em>« Comment faire de la micro-aventure un outil d’attractivité et de tourisme durable ? »</em></strong>.<br><br>
+
+        L’objectif étant de sensibiliser les vignerons à de nouvelles pratiques œnotouristiques plus spontanées, aux retombées locales, qui reposent sur des valeurs fortes et de nouvelles manières de consommer et de vivre le voyage.
+    "
+    }) }}
+
+
+    {{ component('ProjectItem', {
+        image: 'build/images/conception-de-fiches-de-valorisation-des-déchets-viticoles.jpg',
+        title: 'Fiches de valorisation des déchets viticoles',
+        variant: 'communication',
+        content: "
+        <strong>Commanditaire :</strong> Campus Provence-Ventoux en partenariat avec la chambre d’agriculture 84<br>
+        <strong>Date :</strong> Janvier 2023<br><br>
+
+        Conception de fiches de valorisation des déchets viticoles à destination des domaines viticoles, étudiants, pépiniéristes<br>
+        pour sensibiliser autour de solutions de valorisation vertueuses des déchets : <strong><em>paillage</em>, <em>compostage</em>, <em>chimie et matériaux biosourcés</em>, <em>valorisation énergétique</em>.</strong>
+    "
+    }) }}
+
+
+    {{ component('ProjectItem', {
+        image: "build/images/sensibilisation-au-handicap-grâce-a-l'adapation-des-supports-de-communication.png",
+        title: 'Sensibilisation & handicap – Éductour Tourisme & Handicap',
+        variant: 'communication',
+        content: "
+        <strong>Commanditaire :</strong> Maison des vins et du tourisme de Sablet<br>
+        <strong>Date :</strong> 2025 – 2026<br><br>
+
+        Mise en place d’aménagements et de supports adaptés en vue de l’obtention du label <strong><em>Tourisme & Handicap</em></strong> pour un itinéraire de randonnée<br>
+        (handicaps visés : mental, visuel, auditif).<br><br>
+
+        Coordination et organisation de formations destinées à sensibiliser les vignerons aux différents types de handicap et aux bonnes pratiques d’accueil des publics concernés.<br><br>
+
+        Pour donner corps au projet et favoriser l’engagement de chacun, une coordination active est assurée entre les vignerons, l’OTI, la Fédération Française de Randonnée et les différents partenaires du territoire.
+    "
+    }) }}
+
+    {{ component('ProjectItem', {
+        class: 'project-item--4',
+        image: "build/images/sensibilisation-des-jeunes-au-voyage.png",
+        title: 'Festival Jeunes Sans Frontières – Sensibilisation au voyage',
+        variant: 'communication',
+        content: "
+        <strong>Commanditaire :</strong> Action solidaire pour l’organisation du Festival Jeunes Sans Frontières, en partenariat avec Project&Go, la YMCA de Villeneuve-lès-Avignon et Univoyage<br>
+        <strong>Date :</strong> Octobre 2024<br><br>
+
+        <strong><em>« Parce que les voyages forment la jeunesse, nous formons les jeunes au voyage »</em></strong><br><br>
+
+        Telle est la devise et l’ambition de ce festival qui, le temps d’un week-end, propose des projections de films d’aventure en présence des aventuriers, des concerts, ainsi que des stands permettant l’accompagnement des jeunes dans leurs projets de départ, avec conseils, informations et dispositifs de soutien.
+    "
+    }) }}
+
+</section>
+
+    {% endblock %}

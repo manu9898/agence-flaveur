@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PersonalSupportController!{% endblock %}
+
+{% block body %}
+
+<section style="margin-bottom: 100px">
+    {{ component('ServiceHeader', {
+        backgroundClass: 'service-header-personal-support',
+
+        title: 'Pilotage de projets & Conseil stratégique en tourisme durable',
+
+        subtitle: '
+        <div class="service-header-text">
+            De l’idée à la concrétisation, Flaveur accompagne les porteurs de projets dans le pilotage et le déploiement de leurs actions ainsi que dans leur transition.<br><br>
+
+            Qu\'il s\'agisse de développer une offre touristique, de coordonner une démarche collective, de créer des outils de valorisation ou de déployer une stratégie de tourisme durable, Flaveur assure l’interface entre les parties prenantes afin de garantir la cohérence, le suivi et la réussite des projets.
+        </div>
+    ',
+
+        objectives: '
+        <p class="service-objectives">
+            <span class="service-objectives-title">Objectif :</span><br>
+            <span class="service-objectives-text">
+                Transformer les intentions en actions concrètes, réalistes et adaptées aux enjeux, aux identités et aux ambitions de chaque territoire et porteurs de projet.
+            </span>
+        </p>
+    '
+    }) }}
+
+
+    {{ component('ObjectiveGrid', {
+        topImage1: 'etiquette-9-rouge-haut.jpg',
+        bottomImage1: 'etiquette-9-rouge-bas.jpg',
+        title1: 'Coordonner des différentes phases du projet ',
+
+        topImage2: 'etiquette-10-jaune-haut.jpg',
+        bottomImage2: 'etiquette-10-jaune-bas.jpg',
+        title2: 'Suivre les opérations et l’organisation ',
+
+        topImage3: 'etiquette-11-violet-haut.jpg',
+        bottomImage3: 'etiquette-11-violet-bas.jpg',
+        title3: 'Définir des stratégies de développement touristique durable ',
+
+        topImage4: 'etiquette-9-rouge-haut.jpg',
+        bottomImage4: 'etiquette-9-rouge-bas.jpg',
+        title4: 'Accompagner au déploiement de démarches',
+    }) }}
+
+    <div class="supportflaveur text-center container mt-5 mb-5">
+        <p class="fs-4">QUELQUES SAVOUREUX MÉLANGES : réunir anciens du village, écoliers, comédiens et vignerons pour raconter des histoires locales ; Faire se rencontrer épicuriens et artisans du goût le temps d’une balade à vélo à la découverte des saveurs du territoire.</p>
+    </div>
+
+
+    {{ component('ApproachHeader', {
+        title: "",
+        backgroundClass: "approach-bg-prestas12",
+        text:"POUR QUI: Collectivités, syndicats de vignerons, OTI, producteurs, vignerons, restaurateurs et prestataires d’activités,…<br>
+        <br>
+        AU MENU DES RÉALISATIONS COLLECTIVES : Réalisation d’études et de stratégies de développement touristique durable (OTI Marne & Gondoire, Communauté de Communes Bassée-Montois, Gard Tourisme), Requalification d’offres de pleine nature (OTI Sumène Artense), création d’une grille d’évaluation en tourisme durable autour de 4 dimensions, 16 critères et 64 indicateurs (Gard Tourisme).<br> En collaboration avec les cabinets GéoSystème, Project & Go, MrKristo
+",
+    }) }}
+
+
+
+
+
+
+    <div class="projects-page-v2">
+
+        {{ component('ProjectItem', {
+            image: 'build/images/Com-FWE-2024.jpg',
+            title: 'Speed Dating AOC Ventoux',
+            variant: 'fwe',
+            content: "
+        <strong>Commanditaires :</strong> Labels Vignobles & Découvertes Ventoux (depuis 2021), Luberon, Dentelles<br>
+        <strong>Date :</strong> 2021, 2022, 2023, 2024<br><br>
+
+        Coordonner 7 OTI et l’agence d’attractivité du Vaucluse autour d’une <strong>campagne de communication collective</strong> pour la promotion de l’événement du Fascinant Week-end autour de 6 publications débutant M-1 avant l’événement.<br><br>
+
+        Au fil des années, une collaboration avec et entre les Community Managers des OTI s’est bien rodée et a permis un travail collectif de plus en plus fluide, efficace et coordonné.<br><br>
+
+        Objectifs : mobiliser une large communauté, impliquer toutes les destinations autour des vignobles et offrir une visibilité maximale à l’événement ainsi qu’à ses acteurs.
+    "
+        }) }}
+
+        {{ component('ProjectItem', {
+            image: 'build/images/marché-covid.jpg',
+            title: 'La Grande Saint-Vincent de Sablet',
+            variant: 'fwe',
+            content: "
+        <strong>Commanditaire :</strong> Action solidaire pendant la période de confinement du COVID<br>
+        <strong>Date :</strong> 2020<br><br>
+
+        Mise en place d’un <strong>marché-drive des producteurs</strong> permettant la commande et le paiement en ligne, avec retrait des produits sur un marché éphémère organisé deux fois par semaine.<br><br>
+
+        Grâce à la plateforme d’achat La Cagette, le dispositif facilitait la mise en relation entre producteurs et consommateurs ainsi que la gestion des précommandes.<br><br>
+
+        Ce projet avait pour objectif d’offrir aux habitants des communes environnantes un accès régulier à des produits locaux et frais, de soutenir la vente directe des producteurs et de créer des espaces-temps de convivialité, tout en garantissant le respect strict des mesures sanitaires et des gestes barrières.
+    "
+        }) }}
+
+
+        {{ component('ProjectItem', {
+            image: 'build/images/le-relais-des-vignerons.jpg',
+            title: 'Atelier Éductour AOC Ventoux',
+            variant: 'fwe',
+            content: "
+        <strong>Commanditaire :</strong> AOC Ventoux<br>
+        <strong>Date :</strong> Octobre 2024<br><br>
+
+        <strong>Conception et structuration d’une offre œnotouristique packagée</strong> associant plusieurs acteurs du territoire : vignerons, restaurateur, accompagnateur de moyenne montagne, loueur de vélos.<br><br>
+
+        Commercialisation de cette offre assurée par l’OTI Ventoux Provence, immatriculé au registre des opérateurs de voyages.<br><br>
+
+        La vente de produit packagé œnotouristique est l’illustration concrète d’un des attendus opérationnels du label. Cette démarche a également favorisé la convivialité, le développement de synergies entre les professionnels du vin et du tourisme, ainsi que la valorisation de produits du terroir.<br><br>
+
+        À travers cette première réalisation, l’AOC Ventoux a pu démontrer auprès d’Atout France sa capacité à concevoir et commercialiser une offre innovante conciliant mobilité douce et coopération entre les acteurs des filières viticole et touristique.
+    "
+        }) }}
+    </div>
+
+</section>
+    {% endblock %}
