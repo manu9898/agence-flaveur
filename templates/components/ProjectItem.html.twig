@@ -1,14 +1,22 @@
 <div{{ attributes }}>
-    <div class="project-item">
+    <div class="project-item" data-aos="fade-up" data-aos-duration="3000">
 
         <div class="project-item__image {{ class|default('') }}">
             <img src="{{ asset(image) }}" alt="{{ title }}">
         </div>
 
-        <div class="project-item__text project-item--{{ variant|default('default') }}">
+        <div class="project-item__text project-item__text--layered">
+
+            {% if subtitle is defined and subtitle is not empty %}
+                <div class="project-item__subtitle">
+                    {{ subtitle }}
+                </div>
+            {% endif %}
+
             <p>
                 {{ content|raw }}
             </p>
+
         </div>
 
     </div>

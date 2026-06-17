@@ -1423,3 +1423,234 @@ footer {
 .project-item__text.project-item--communication strong {
     color: #8c334d;
 }
+
+
+/* page contact */
+
+
+
+
+/* ===================================================== */
+/* PAGE CONTACT */
+/* ===================================================== */
+
+
+
+
+
+.contact-page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.contact-page__background {
+    position: absolute;
+    inset: 0;
+    background: url('../images/flaveur-fond-contact.jpg') center center / cover no-repeat;
+    top:15%;
+    z-index: 0;
+}
+
+/* ===================================================== */
+/* WHITE OVERLAY (comme site Flaveur) */
+/* ===================================================== */
+
+.contact-page__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.6);
+    z-index: 1;
+}
+
+
+.hero-title {
+    text-align: center;
+    font-size: 32px; /* même taille que ton ancien h1 */
+    font-weight: 500;
+    color: #008bac;
+    margin-top: 40px;
+}
+
+
+.hero-title em {
+    font-style: italic;
+
+}
+
+/* tout le contenu au-dessus */
+.contact-page > *:not(.contact-page__background):not(.contact-page__overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===================================================== */
+/* HERO FULL WIDTH */
+/* ===================================================== */
+
+.hero-full {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* 👈 légèrement moins agressif que 100vh */
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero-full__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 85%;
+    display: block;
+}
+.hero-full__overlay h1 {
+    color: #fff;
+    font-size: 42px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* ===================================================== */
+/* CONTENT */
+/* ===================================================== */
+
+
+
+/* ===================================================== */
+/* SECTION */
+/* ===================================================== */
+
+
+/* ===================================================== */
+/* SECTION */
+/* ===================================================== */
+
+.projects-section {
+    padding: 80px 0;
+}
+
+/* ===================================================== */
+/* BASE TEXT */
+/* ===================================================== */
+
+.project-item__text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.project-item__text i {
+    margin-right: 12px;
+    color: #008bac;
+    width: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.project-item__text strong {
+    color: #008bac !important;
+    font-weight: 600;
+}
+
+/* ===================================================== */
+/* LINKEDIN */
+/* ===================================================== */
+
+.linkedin-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.linkedin-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/* ===================================================== */
+/* SUBTITLE */
+/* ===================================================== */
+
+.project-item__text--layered {
+    position: relative;
+}
+
+.project-item__subtitle {
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    font-size: 32px;
+    font-weight: 600;
+    color: #008bac;
+}
+
+/* ===================================================== */
+/* 🔥 CECILE CARD FIX PROPRE */
+/* ===================================================== */
+
+.project-item__image--cecile .project-item {
+    display: flex;
+    gap: 30px;
+    align-items: stretch; /* ⭐ clé : même hauteur image + texte */
+}
+
+/* IMAGE = suit la hauteur de la card */
+.project-item__image--cecile .project-item__image {
+    flex: 0 0 40%;
+}
+
+.project-item__image--cecile .project-item__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.project-item__image--cecile .project-item__text {
+    flex: 1;
+    position: relative;
+    display: flex;
+}
+
+/* 🔥 CENTRAGE VERTICAL PROPRE */
+.project-item__image--cecile .project-item__text > p {
+    margin: auto 0;
+}
+
+/* SUBTITLE */
+.project-item__image--cecile .project-item__subtitle {
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    font-size: 32px;
+    font-weight: 600;
+    color: #008bac;
+}
+
+/* ===================================================== */
+/* MOBILE */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+
+    .project-item__image--cecile .project-item {
+        flex-direction: column;
+    }
+
+    .project-item__image--cecile .project-item__image {
+        width: 100%;
+    }
+
+    .project-item__image--cecile .project-item__text > p {
+        margin: 0;
+    }
+
+    .project-item__image--cecile .project-item__subtitle {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 10px;
+    }
+}
