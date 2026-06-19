@@ -1,4 +1,3 @@
-@import "~bootstrap/scss/bootstrap";
 
 body {
     font-family: 'ABeeZee', sans-serif;
@@ -131,7 +130,7 @@ body {
     position: relative;
     height: 668px; /* hauteur fixe ou adaptable 668px */
     overflow: hidden; /* pour que l’overlay ne dépasse pas */
-    background: url('../images/ste-lucie.png');
+    background: url('/images/ste-lucie.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -261,7 +260,7 @@ body {
 }
 
 .svgHomePage{
-position: absolute;
+    position: absolute;
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
@@ -407,7 +406,7 @@ footer {
 }
 
 .hero-bg-2 {
-    background-image: url("../images/motifs-prestas-2.jpg");
+    background-image: url("/images/motifs-prestas-2.jpg");
     background-position: center 15%;
 }
 
@@ -422,12 +421,12 @@ footer {
 
 
 .hero-bg-4 {
-    background-image: url("../images/motifs-prestas-4.jpg");
+    background-image: url("/images/motifs-prestas-4.jpg");
     background-position: center 15%;
 }
 
 .hero-bg-5 {
-    background-image: url("../images/motifs-prestas-5.jpg");
+    background-image: url("/images/motifs-prestas-5.jpg");
     background-position: center 15%;
     margin-bottom: 200px!important;
 }
@@ -503,7 +502,7 @@ footer {
 
 .service-header-project-development{
     position: relative;
-    background-image: url('../images/motifs-prestas-6.jpg');
+    background-image: url('/images/motifs-prestas-6.jpg');
     background-position: left bottom; /* focus sur le coin inférieur gauche */
     background-size: cover;           /* l’image recouvre tout le conteneur */
     background-repeat: no-repeat;     /* évite la répétition */
@@ -609,7 +608,7 @@ footer {
 
 .service-header-personal-support {
     position: relative;
-    background-image: url('../images/motifs-prestas9.jpg');
+    background-image: url('/images/motifs-prestas9.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -635,11 +634,11 @@ footer {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-            to left,
-            rgba(0,0,0,0.25) 5%,
-            rgba(0,0,0,0.10) 45%,
-            rgba(0,0,0,0.02) 75%,
-            rgba(0,0,0,0)
+        to left,
+        rgba(0,0,0,0.25) 5%,
+        rgba(0,0,0,0.10) 45%,
+        rgba(0,0,0,0.02) 75%,
+        rgba(0,0,0,0)
     );
     z-index: 2;
     pointer-events: none;
@@ -696,7 +695,7 @@ footer {
 }
 
 .service-header-personal-support .service-objectives{
- padding: 20px 200px 0 200px !important;
+    padding: 20px 200px 0 200px !important;
 }
 /* ===================================== */
 /* SUBTITLE TEXT */
@@ -782,7 +781,7 @@ footer {
 
 
 .service-header-editorial {
-    background-image: url('../images/motifs-prestas-11.jpg');
+    background-image: url('/images/motifs-prestas-11.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -807,9 +806,9 @@ footer {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-            to left,
-            rgba(0,0,0,0.28),
-            rgba(0,0,0,0.12)
+        to left,
+        rgba(0,0,0,0.28),
+        rgba(0,0,0,0.12)
     );
     pointer-events: none;
     z-index: 1;
@@ -1089,7 +1088,7 @@ footer {
 }
 
 .approach-bg-prestas10{
-    background-image: url('../images/motifs-prestas-10.jpg');
+    background-image: url('/images/motifs-prestas-10.jpg');
     background-position: right 0px bottom 0px;
 }
 
@@ -1103,9 +1102,9 @@ footer {
     position: absolute;
     inset: 0;
     background: linear-gradient(
-            to left,
-            rgba(0,0,0,0.05) 40%,
-            rgba(0,0,0,0.45) 100%
+        to left,
+        rgba(0,0,0,0.05) 40%,
+        rgba(0,0,0,0.45) 100%
     );
     pointer-events: none;
     z-index: 1;
@@ -1124,7 +1123,7 @@ footer {
 
 
 .approach-bg-prestas12{
-    background-image: url('../images/motifs-prestas-12.jpg');
+    background-image: url('/images/motifs-prestas-12.jpg');
     background-position: right 0px bottom 0px;
 }
 
@@ -1447,7 +1446,7 @@ footer {
 .contact-page__background {
     position: absolute;
     inset: 0;
-    background: url('../images/flaveur-fond-contact.jpg') center center / cover no-repeat;
+    background: url('/images/flaveur-fond-contact.jpg') center center / cover no-repeat;
     top:15%;
     z-index: 0;
 }
