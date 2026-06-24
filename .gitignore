@@ -1,26 +1,37 @@
-###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
+### Symfony ###
+.env
+.env.*
+!.env.example
+
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+/public/bundles/
 
-###> phpunit/phpunit ###
+### PHPUnit ###
 /phpunit.xml
 /.phpunit.cache/
-###< phpunit/phpunit ###
 
+### Node ###
+node_modules/
+/public/build/
+
+### IDE ###
 .idea/
+.DS_Store
 TODO.md
 
-# Node (même si supprimé)
-node_modules/
+### OVH / server files ###
+.ovhconfig
 
-# Front assets (ton nouveau setup)
-public/build/
+### Debug / security risk ###
+/public/phpinfo.php
+/public/info.php
+/public/test.php
+/public/whoami.php
+/public/kernel_test.php
+/public/flush_cache.php
 
-# OS / editor
-.DS_Store
+/config/secrets/
+
+/var/log/
