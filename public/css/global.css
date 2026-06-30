@@ -30,7 +30,12 @@ body {
 ****************************************************** */
 
 .navbar{
-    background-color: white!important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: white;
 }
 
 .nav-link {
@@ -1670,4 +1675,65 @@ footer {
         left: auto;
         margin-bottom: 10px;
     }
+}
+
+
+.row.align-items-stretch {
+    align-items: stretch;
+}
+
+.project-item--related {
+    height: 100%;
+    display: flex;
+    transition: all 0.3s ease;
+    min-height: 220px;
+}
+
+.project-item--related:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* STRUCTURE INTERNE UNIQUE */
+.card-inner {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* TITRE = HAUTEUR FIXE POUR ALIGNEMENT */
+.card-title {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title h4 {
+    margin: 0;
+    color: #008bac;
+}
+
+/* TEXTE = CENTRÉ PROPRE */
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card-text p {
+    margin: 0;
+}
+
+.project-item--related a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.project-item--related p {
+    color: #000;
 }
