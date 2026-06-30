@@ -1,3 +1,8 @@
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 
 body {
     font-family: 'ABeeZee', sans-serif;
@@ -8,14 +13,15 @@ body {
 ****************************************************** */
 
 .img-logo-header {
-    width: 40% !important;
+    width: 420px;
     max-width: 300px;
+    height: auto;
 }
 
-/* tablette et + */
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
     .img-logo-header {
-        width: 120px;
+        width: 160px;
     }
 }
 
@@ -297,6 +303,18 @@ body {
     .logo {
         margin-bottom: 0;
     }
+}
+
+@media (max-width: 768px) {
+    .svgHomePage text {
+        font-size: 12px!important; /* réduit le guillemet */
+        transform: translateY(-1px) !important;
+
+    }
+    .svgHomePage circle {
+        transform: translateY(-2px) !important;
+    }
+
 }
 
 
